@@ -3,8 +3,8 @@
 * Auto generated Codehooks (c) example
 * Install: npm i codehooks-js codehooks-crudlify
 */
-import {app} from 'codehooks-js'
-import {crudlify} from 'codehooks-crudlify'
+import { app } from 'codehooks-js'
+import { crudlify } from 'codehooks-crudlify'
 import { date, object, string } from 'yup';
 
 const flashCardYup = object({
@@ -16,19 +16,20 @@ const flashCardYup = object({
 
 const todoItemYup = object({
   todoItem: string().required(),
-  description: string(),
+  done: boolean().required(),
   createdOn: date().default(() => new Date())
 })
 
 // test route for https://<PROJECTID>.api.codehooks.io/dev/
-app.get('/test', (req, res) => {
-  res.json({result: "Im not sure what this means!"})
+app.get('/data', (req, res) => {
+  res.json({result: "I think I know what this means!"})
   // res.send('CRUD server ready')
 })
 
 // Use Crudlify to create a REST API for any collection
-// crudlify(app)
-crudlify(app, {flashCard: flashCardYup})
+crudlify(app)
+// crudlify(app, {flashCard: flashCardYup})
+// crudlify(app, {todoItem: todoItemYup})
 
 // bind to serverless runtime
 export default app.init();
