@@ -15,7 +15,7 @@ https://superb-muffin-977992.netlify.app/todos
 
 ## Homework Notes
 
-GETTING STARTED: The sign in does not work (more below about that), so click the check mark icon on the top left to go to the todos screen.
+GETTING STARTED: The sign in does not work (more below about that), so click the check mark icon on the top left to go to the todos screen. The todos screen has many empty todos, those are from testing but I cannot delete them because delete does not work.
 
 I was not able to successfully complete all of the required homework tasks. I spent a lot of time trying to get crud working but was unable to integrate that into my project. The add button does work, and does push information using the REST API. I was not able to get update, read, and delete working. If you look at my code, todos.js has my attempt at read. And I ran out of time to get update and delete.
 Beacuse read does not work, /done and /todo:id do not work because I could not get one item from the database.
