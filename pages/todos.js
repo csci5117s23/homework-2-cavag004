@@ -21,14 +21,13 @@ export default function Todos() {
                 'headers': { 'x-apikey': '31568e98-9595-4f58-a147-57e18af001c7' }
             });
             const data = await response.json();
-            for (var i = 0; i < data.length; i++) {
-                var item = data[i].todoItem;
-                var complete = data[i].done;
-                var jsonId = data[i]._id;
-                setTodos([{ item, complete, jsonId }, ...todos])
-                console.log(i)
-            }
-            console.log(todos.length)
+            setTodos(data);
+            // for (var i = 0; i < data.length; i++) {
+            //     var item = data[i].todoItem;
+            //     var complete = data[i].done;
+            //     var jsonId = data[i]._id;
+            //     setTodos([{ item, complete, jsonId }, ...todos])
+            // }
         };
 
         fetchData();
@@ -38,8 +37,8 @@ export default function Todos() {
         <>
             <Tabs />
             <section class="section">
-                {/* <Form onSubmit={({ item, jsonId }) => { setTodos([{ item, complete: false, jsonId }, ...todos]) }} /> */}
-                <Form/>
+                <Form onSubmit={({ item, jsonId }) => { setTodos([{ item, complete: false, jsonId }, ...todos]) }} />
+                {/* <Form/> */}
                 <div class="box mt-5">
                     {todos.map(({ item, complete, jsonId }, i) => (
                     // {todos.map((todo, i) => (
@@ -56,8 +55,8 @@ export default function Todos() {
         <>
             <Tabs />
             <section class="section">
-                <Form/>
-                {/* <Form onSubmit={({ item, jsonId }) => { setTodos([{ item, complete: false, jsonId }, ...todos]) }} /> */}
+                {/* <Form/> */}
+                <Form onSubmit={({ item, jsonId }) => { setTodos([{ item, complete: false, jsonId }, ...todos]) }} />
                 <div class="box mt-5"><span>//TODO: add todo items</span></div>
             </section>
         </>
