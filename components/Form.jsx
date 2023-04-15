@@ -61,9 +61,6 @@ const Form = ({ onSubmit }) => {
                     onSubmit({item, jsonId});
                     resetValue();
                 });
-
-            // postFetch(text.value);
-            // onSubmit(text.value);
         }}>
             {/* The html input */}
             <div class="box">
