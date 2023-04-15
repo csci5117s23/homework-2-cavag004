@@ -7,20 +7,21 @@ Please fill out all of the following sections to help us grade your submission:
 
 ## Student (to be completed individually)
 
-* First Last, x500@umn.edu
+* Levi Cavagnetto, cavag004@umn.edu
 
 ## Link to Site
 
-<https://TODO.com/>
+https://superb-muffin-977992.netlify.app/todos
+
+## Note
+
+I was not able to successfully complete all of the required homework tasks. I spent a lot of time trying to get crud working but was unable to integrate that into my project. The add button does work, and does push information using the REST API. I was not able to get update, read, and delete working. If you look at my code, todos.js has my attempt at read. And I ran out of time to get update and delete.
+
+I spent so much time on crud that I could not get user auth working at all, and the stuff I did have is just comented out.
+
+I started on this assignment immediately, I built the front end first because all of the information for the backend was not told and demonstrated to us yet. I found it very difficult to implent the backend after I made my front end. Some people I talked to waited until we had everything for the backend and did the front end last. I would like to focus more on that in the future. Pretending information is there is not a great way to develope an application, becuase I found that I can't always represent the data in the way that I wanted.
 
 ## Challenge Task
 
-* I started the challenge task: [yes/no]
-* I completed the challenge task: [yes/no]
-
-
-curl --location 'https://backend-26tw.api.codehooks.io/dev/todoitems' --header 'x-apikey: 31568e98-9595-4f58-a147-57e18af001c7' --header 'Content-Type: application/json' --data-raw '{"todoItem": "Work","description": "Go to work today!"}'
-
-curl --location 'https://backend-26tw.api.codehooks.io/dev/todoitems' --header 'x-apikey: 31568e98-9595-4f58-a147-57e18af001c7' --header 'Content-Type: application/json'
-
-curl --location --request DELETE 'https://backend-26tw.api.codehooks.io/dev/todoitems/64358ea4f468e7468d955997' --header 'x-apikey: 31568e98-9595-4f58-a147-57e18af001c7'
+* I started the challenge task: No
+* I completed the challenge task: No
