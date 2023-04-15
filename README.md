@@ -13,7 +13,7 @@ Please fill out all of the following sections to help us grade your submission:
 
 https://superb-muffin-977992.netlify.app/todos
 
-## Note
+## Homework Notes
 
 I was not able to successfully complete all of the required homework tasks. I spent a lot of time trying to get crud working but was unable to integrate that into my project. The add button does work, and does push information using the REST API. I was not able to get update, read, and delete working. If you look at my code, todos.js has my attempt at read. And I ran out of time to get update and delete.
 
